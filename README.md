@@ -13,3 +13,4 @@
 - https://www.color-hex.com/color-palette/24560 - Bulbasaur green login colour
 - https://www.color-hex.com/color-palette/24565 - Charizard orange shop cart
 - https://getbootstrap.com/docs/4.0/components/card/ - bootstrap cards
+- https://www.color-hex.com/color-palette/105957 - caterpile colours
