@@ -4,7 +4,7 @@ from django.shortcuts import render
 
 
 def checkout_summary(request):
-    pass
+    return render(request, 'checkout/checkout-summary.html')
 
 
 def checkout_add(request):
