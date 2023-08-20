@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from .checkout import Checkout
 
 # Create your views here.
 
