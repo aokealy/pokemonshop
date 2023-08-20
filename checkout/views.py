@@ -9,7 +9,11 @@ def checkout_summary(request):
 
 
 def checkout_add(request):
-    pass
+    
+    checkout = Checkout(request)
+    if request.POST.get('action') == 'post':
+         product_id = int(request.POST.get('product_id'))
+         product_quantity = int(request.POST.get('product_quantity'))
 
 
 def checkout_delete(request):
