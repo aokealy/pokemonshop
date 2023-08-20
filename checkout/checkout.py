@@ -13,11 +13,11 @@ class Checkout():
         self.checkout = checkout
 
 
-     def add(self, product, product_qty): 
+    def add(self, product, product_qty): 
 
         product_id = str(product.id)  
 
-         if product_id in self.checkout:
+        if product_id in self.checkout:
             self.checkout[product_id]['qty'] = product_qty
 
         else:

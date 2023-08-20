@@ -3,6 +3,8 @@ from .checkout import Checkout
 from shop.models import Product
 from django.shortcuts import get_object_or_404
 
+from django.http import JsonResponse
+
 # Create your views here.
 
 
@@ -11,14 +13,21 @@ def checkout_summary(request):
 
 
 def checkout_add(request):
-    
+
     checkout = Checkout(request)
     if request.POST.get('action') == 'post':
-         product_id = int(request.POST.get('product_id'))
-         product_quantity = int(request.POST.get('product_quantity'))
 
-         product = get_object_or_404(Product, id=product_id)
-         checkout.add(product=product, product_qty=product_quantity)
+        product_id = int(request.POST.get('product_id'))
+        product_quantity = int(request.POST.get('product_quantity'))
+
+        product = get_object_or_404(Product, id=product_id)
+
+        checkout.add(product=product, product_qty=product_quantity)
+
+        response = JsonResponse({'this product is called': product.title, 'and the product quantity': checkout_quantity})
+
+        return response
+
 
 
 def checkout_delete(request):
