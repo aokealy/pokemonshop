@@ -11,7 +11,7 @@
     
     <div class="container">
       
-      <h1 class="h4 text-center"> Checkout Summary &nbsp;<i class="fa-solid fa-cart-shopping" style="color: #a3d58e;"></i> </h1>
+      <h1 class="h3 text-center text-danger"> Checkout Summary &nbsp;<i class="fa-solid fa-cart-shopping" style="color: #a3d58e;"></i> </h1>
 
 	<hr>
 
@@ -117,12 +117,15 @@
 
       <div class="col-12 text-end">
  
-        <div class="h6 fw-bold"> Sub total: $ <div id="total" class="d-inline-flex"> <!-- cart.get_total --> </div></div>
+        <div class="h6 fw-bold"> Total Amount: $ <div id="total" class="d-inline-flex">{{checkout.get_total}} <!-- checkout.get_total --> </div></div>
  
       </div>
  
 
     </div>
+
+    <br>
+    <br>
   
 
  </main>
