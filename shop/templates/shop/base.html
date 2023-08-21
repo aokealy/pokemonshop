@@ -144,6 +144,18 @@
                         &nbsp;
 
                         <div id="checkout-qty" class="d-inline-flex">
+                            {% with qty_amount=checkout|length %}
+
+                             {% if qty_amount > 0 %}
+
+                             {{ qty_amount }}
+
+                             {% else %}
+                                0
+
+                             {% endif %}
+
+                            {% endwith %}
 
                             
                         </div>

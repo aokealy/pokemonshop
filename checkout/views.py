@@ -24,7 +24,9 @@ def checkout_add(request):
 
         checkout.add(product=product, product_qty=product_quantity)
 
-        response = JsonResponse({'qty': product_quantity})
+        checkout_quantity = checkout.__len__()
+
+        response = JsonResponse({'qty': checkout_quantity})
 
         return response
 
