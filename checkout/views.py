@@ -9,7 +9,10 @@ from django.http import JsonResponse
 
 
 def checkout_summary(request):
-    return render(request, 'checkout/checkout-summary.html')
+
+    checkout = Checkout(request)
+
+    return render(request, 'checkout/checkout-summary.html', {'checkout': checkout})
 
 
 def checkout_add(request):
