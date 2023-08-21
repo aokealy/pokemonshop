@@ -24,4 +24,9 @@ class Checkout():
 
             self.checkout[product_id] = {'price': str(product.price), 'qty': product_qty}
 
-        self.session.modified = True   
+        self.session.modified = True  
+
+
+    def __len__(self):
+
+        return sum(item['qty'] for item in self.checkout.values())     
