@@ -27,7 +27,17 @@ class Checkout():
 
             self.checkout[product_id] = {'price': str(product.price), 'qty': product_qty}
 
-        self.session.modified = True  
+        self.session.modified = True 
+
+    def delete(self, product):
+
+        product_id = str(product)  
+
+        if product_id in self.checkout:
+
+            del self.checkout[product_id] 
+             
+        self.session.modified = True       
 
 
     def __len__(self):
