@@ -57,5 +57,24 @@ def checkout_delete(request):
 
 
 def checkout_update(request):
-    pass
+    
+    checkout = Checkout(request)
+
+    if request.POST.get('action') == 'post':
+
+        product_id = int(request.POST.get('product_id'))
+        product_quantity = int(request.POST.get('product_quantity'))
+
+        checkout.update(product=product_id, qty=product_quantity)
+
+
+        checkout_quantity = checkout.__len__()
+
+        checkout_total = checkout.get_total()
+
+
+        response = JsonResponse({'qty':checkout_quantity, 'total':checkout_total})
+
+        return response
+
 
