@@ -1,3 +1,6 @@
+from decimal import Decimal
+from shop.models import Product
+
 class Checkout():
 
     def __init__(self, request):
@@ -29,4 +32,24 @@ class Checkout():
 
     def __len__(self):
 
-        return sum(item['qty'] for item in self.checkout.values())     
+        return sum(item['qty'] for item in self.checkout.values()) 
+
+
+    def __iter__(self): 
+
+        all_product_ids = self.checkout.keys()
+
+        products =  Product.objects.filter(id__in=all_product_ids)
+
+        checkout = self.checkout.copy()
+
+        for product in products:
+            checkout[str(product.id)]['product'] = product
+
+        for item in checkout.values():
+            item['price'] = Decimal(item['price']) 
+
+            item['total'] = item['price'] * item['qty']
+
+            yield item      
+       
