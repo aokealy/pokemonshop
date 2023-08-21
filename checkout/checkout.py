@@ -64,7 +64,9 @@ class Checkout():
 
         products =  Product.objects.filter(id__in=all_product_ids)
 
-        checkout = self.checkout.copy()
+        import copy
+
+        checkout = copy.deepcopy(self.checkout)
 
         for product in products:
             checkout[str(product.id)]['product'] = product
