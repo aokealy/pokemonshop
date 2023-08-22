@@ -21,3 +21,20 @@ def register(request):
     context = {'form':form}        
 
     return render(request,'profiles/registration/register.html', context=context)
+
+
+def email_verify_sent(request):
+
+    pass
+
+def email_verify_success(request):
+
+    pass
+
+
+def email_verify_failed(request):
+
+    pass
+
+
+
