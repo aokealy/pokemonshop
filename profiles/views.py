@@ -22,6 +22,9 @@ def register(request):
 
     return render(request,'profiles/registration/register.html', context=context)
 
+def email_verify(request):
+    pass
+
 
 def email_verify_sent(request):
 
