@@ -20,6 +20,9 @@ class CreateUserForm(UserCreationForm):
         self.fields['password1'].help_text= None
         self.fields['password2'].help_text= None
 
+     # make email a required field 
+        self.fields['email'].required = True    
+
 
      # email validation form
     def clean_email(self):
