@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import redirect, render
 
 from .forms import CreateUserForm
 
@@ -16,7 +16,7 @@ def register(request):
 
             user = form.save()
 
-            return redirect('')
+            return redirect('shop')
 
     context = {'form':form}        
 
