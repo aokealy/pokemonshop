@@ -66,3 +66,22 @@ class UpdateUserForm(forms.ModelForm):
 
         # make email a required field
         self.fields["email"].required = True
+
+    # email verification
+
+    def clean_email(self):
+        email = self.cleaned_data.get("email")
+
+        if (
+            User.objects.filter(email=email)
+            .exclude(pk=self.instance.pk)
+            .exists()
+        ):
+            raise forms.ValidationError("This email is invalid")
+
+        # len function updated ###
+
+        if len(email) >= 350:
+            raise forms.ValidationError("Your email is too long")
+
+        return email
