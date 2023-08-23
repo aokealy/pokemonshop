@@ -18,6 +18,8 @@ urlpatterns = [
 
     path('my-login', views.my_login, name='my-login'),
 
+    path('profile-logout', views.profile_logout, name='profile-logout'),
+
     path('pokemon_hub', views.pokemon_hub, name='pokemon-hub'), 
 
 

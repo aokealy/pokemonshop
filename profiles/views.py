@@ -7,6 +7,7 @@ from django.contrib.auth.models import User
 from django.contrib.auth.models import auth
 from django.contrib.auth import authenticate, login, logout
 
+from django.contrib.auth.decorators import login_required
 
 
 # Create your views here.
@@ -73,10 +74,15 @@ def my_login(request):
 
     return render(request, 'profiles/my-login.html', context=context)
 
+# logout
+def profile_logout(request):
+
+    auth.logout(request)
+
+    return redirect("shop")
 
 
-
-
+@login_required(login_url='my-login')
 def pokemon_hub(request):
     return render(request, 'profiles/pokemon-hub.html')  
     
