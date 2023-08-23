@@ -1,1 +1,37 @@
-<h2>success</h2>
+{% include "shop/base.html" %}
+
+{% load static %}
+
+{% load crispy_forms_tags %}
+
+
+{% block content %}
+
+
+<div class="login-background">
+<body>
+    <br>
+
+     <div class="container bg-white shadow-md p-5 form-layout">
+
+        <h3 class="text-center"><i class="fa-solid fa-circle-user" style="color: #18af75;"></i> &nbsp Register Success:</h3>
+        <hr>
+        <h3 class="text-center">Congratulations on creating a profile with us! &nbsp; <i class="fa-solid fa-face-smile-wink" style="color: #40f264;"></i> </h3>
+        <hr>
+        <h5 class="text-center"> Please proceed to login down below &nbsp; <i class="fa-solid fa-circle-arrow-down fa-xl" style="color: #3a76df;"></i></h5>
+        
+        <br>
+        <br>
+
+        <a class="btn btn-danger rounded btn-block p-2 btn-lg w-100" type="button"  href="{% url 'my-login' %}"> Procceed to Login </a>
+
+    </div>
+</body>
+
+<br>
+</div>
+
+
+
+
+{% endblock %}

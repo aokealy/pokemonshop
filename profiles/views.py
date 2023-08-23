@@ -22,7 +22,7 @@ def register(request):
         if form.is_valid():
             user = form.save()
 
-            return redirect("shop")
+            return redirect("register-success")
 
     context = {"form": form}
 
