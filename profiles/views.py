@@ -12,94 +12,81 @@ from django.contrib.auth.decorators import login_required
 
 # Create your views here.
 
-def register(request):
 
+def register(request):
     form = CreateUserForm()
 
-    if request.method == 'POST':
-
+    if request.method == "POST":
         form = CreateUserForm(request.POST)
 
         if form.is_valid():
-
             user = form.save()
 
-            return redirect('shop')
+            return redirect("shop")
 
-    context = {'form':form}        
+    context = {"form": form}
 
-    return render(request,'profiles/registration/register.html', context=context)
-
+    return render(request, "profiles/registration/register.html", context=context)
 
 
 def my_login(request):
     form = LoginForm()
 
-    if request.method == 'POST':
-
+    if request.method == "POST":
         form = LoginForm(request, data=request.POST)
 
         if form.is_valid():
-
-            username = request.POST.get('username')
-            password = request.POST.get('password')
+            username = request.POST.get("username")
+            password = request.POST.get("password")
 
             user = authenticate(request, username=username, password=password)
 
             if user is not None:
-
                 auth.login(request, user)
 
                 return redirect("pokemon-hub")
 
+    context = {"form": form}
 
-    context = {'form':form}
+    return render(request, "profiles/my-login.html", context=context)
 
-    return render(request, 'profiles/my-login.html', context=context)
 
 # logout
 def profile_logout(request):
-
     auth.logout(request)
 
     return redirect("shop")
 
 
-@login_required(login_url='my-login')
+@login_required(login_url="my-login")
 def pokemon_hub(request):
-    return render(request, 'profiles/pokemon-hub.html')  
-    
+    return render(request, "profiles/pokemon-hub.html")
 
 
-@login_required(login_url='my-login')
+@login_required(login_url="my-login")
 def profile_management(request):
-
-    if request.method == 'POST':
-
+    if request.method == "POST":
         user_form = UpdateUserForm(request.POST, instance=request.user)
 
         if user_form.is_valid():
             user_form.save()
 
-            return redirect('pokemon-hub')
+            return redirect("pokemon-hub")
+
+    user_form = UpdateUserForm(instance=request.user)
+
+    context = {"user_form": user_form}
+
+    return render(request, "profiles/profile-management.html", context=context)
 
 
-    user_form = UpdateUserForm(instance=request.user)  
-
-    context = {'user_form':user_form}       
-    
-    return render(request, 'profiles/profile-management.html', context=context)
-
-
-@login_required(login_url='my-login')
+@login_required(login_url="my-login")
 def delete_profile(request):
-
     user = User.objects.get(id=request.user.id)
 
-    if request.method == 'POST':
+    if request.method == "POST":
         user.delete()
 
-        return redirect('shop')
+        return redirect("shop")
 
-    
-    return render(request, 'profiles/delete-profile.html')  
+    return render(request, "profiles/delete-profile.html")
