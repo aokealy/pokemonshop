@@ -72,4 +72,11 @@ def my_login(request):
     context = {'form':form}
 
     return render(request, 'profiles/my-login.html', context=context)
+
+
+
+
+
+def pokemon_hub(request):
+    return render(request, 'profiles/pokemon-hub.html')  
     
