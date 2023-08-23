@@ -55,7 +55,16 @@ def my_login(request):
 
 # logout
 def profile_logout(request):
-    auth.logout(request)
+    try:
+        for key in list(request.session.keys()):
+            if key == "session_key":
+                continue
+
+            else:
+                del request.session[key]
+
+    except KeyError:
+        pass
 
     return redirect("shop")
 
