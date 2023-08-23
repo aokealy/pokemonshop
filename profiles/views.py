@@ -86,3 +86,15 @@ def profile_logout(request):
 def pokemon_hub(request):
     return render(request, 'profiles/pokemon-hub.html')  
     
+
+
+@login_required(login_url='my-login')
+def profile_management(request):
+    
+    return render(request, 'profiles/profile-management.html')
+
+
+@login_required(login_url='my-login')
+def delete_profile(request):
+    
+    return render(request, 'profiles/delete-profile.html')  

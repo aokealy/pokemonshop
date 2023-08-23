@@ -22,6 +22,10 @@ urlpatterns = [
 
     path('pokemon_hub', views.pokemon_hub, name='pokemon-hub'), 
 
+    path('profile-management', views.profile_management, name='profile-management'), 
+
+    path('delete-profile', views.delete_profile, name='delete-profile'), 
+
 
     
 ]
