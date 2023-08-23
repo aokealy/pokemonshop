@@ -117,19 +117,30 @@
             
             <ul class="navbar-nav ms-auto">
 
-
-                <li class="nav-item">
-            
-                    <a class="btn btn-alert navbar-btn text-white" type="button"  href="{% url 'register' %}"><i class="fa-solid fa-address-card fa-lg" style="color: #a2d7d5;"></i> &nbsp; Register </a>
-
-                </li>
+                {% if user.is_authenticated %}
 
 
-                <li class="nav-item">
+                    <li class="nav-item">
+                
+                        <a class="btn btn-alert navbar-btn text-white" type="button"  href="{% url 'pokemon-hub' %}"><i class="fa-solid fa-house-user" style="color: #45c9b3;"></i> &nbsp; Pokemon Hub </a>
 
-                    <a class="btn btn-alert navbar-btn text-white" type="button"  href="{% url 'my-login' %}"><i class="fa-solid fa-right-to-bracket fa-lg" style="color: #83ba36;"></i>&nbsp; Login </a>
+                    </li>
 
-                </li>
+                    {% else %}
+
+                    <li class="nav-item">
+                
+                        <a class="btn btn-alert navbar-btn text-white" type="button"  href="{% url 'register' %}"><i class="fa-solid fa-address-card fa-lg" style="color: #a2d7d5;"></i> &nbsp; Register </a>
+
+                    </li>
+                    {% endif %}
+
+
+                    <li class="nav-item">
+
+                        <a class="btn btn-alert navbar-btn text-white" type="button"  href="{% url 'my-login' %}"><i class="fa-solid fa-right-to-bracket fa-lg" style="color: #83ba36;"></i>&nbsp; Login </a>
+
+                    </li>
 
 
                 &nbsp; &nbsp; &nbsp;
