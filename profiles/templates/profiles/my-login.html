@@ -1,0 +1,57 @@
+{% include "shop/base.html" %}
+
+{% load static %}
+
+{% load crispy_forms_tags %}
+
+
+{% block content %}
+
+
+<div class="login-background mb-5">
+<body>
+    <br>
+
+     <div class="container bg-white shadow-md p-5 form-layout">
+
+        <h3 class="text-center"><i class="fa-solid fa-key" style="color: #49f37c;"></i>&nbsp Login: </h3>
+        <hr>
+        
+
+        <br>
+        <br>
+
+        <form method="POST" autocomplete="off">
+            {% csrf_token %}
+
+            {{form.username|as_crispy_field}}
+
+            <br>
+
+            {{form.password|as_crispy_field}}
+
+            <br><br>
+
+            <button type="submit" class="btn btn-danger rounded btn-block p-2 btn-lg w-100">&nbsp; login</button>
+
+            <br><br>
+            <div class="text-center">
+            <a href="">Already have an account?</a>
+        
+            </div>
+
+
+        
+        </form>
+
+
+    </div>
+</body>
+
+<br>
+</div>
+
+
+
+
+{% endblock %}
