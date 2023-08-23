@@ -68,6 +68,10 @@ class UpdateUserForm(forms.ModelForm):
             'email': None,
         }
 
+
     def __init__(self, *args, **kwargs):
-        super(UpdateUserForm, self).__init__(*args, **kwargs)  
+        super(UpdateUserForm, self).__init__(*args, **kwargs) 
+
+          # make email a required field 
+        self.fields['email'].required = True 
 

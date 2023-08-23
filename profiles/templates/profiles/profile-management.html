@@ -1,1 +1,75 @@
-<h1>Profile management</h1>
+{% include "shop/base.html" %}
+
+{% load static %}
+
+{% load crispy_forms_tags %}
+
+
+{% block content %}
+
+
+<div class="register-background">
+<body>
+    <br>
+    <div class="container bg-white shadow-md p-5 form-layout">
+
+        <h2 class="text-center"><i class="fa-solid fa-address-card"></i>&nbsp Profile Management:</h2>
+        <hr>
+
+        
+
+       
+        </div>
+
+        <br>
+
+     <div class="container bg-white shadow-md p-5 form-layout">
+
+        <h3 class="text-center"> <i class="fa-solid fa-user" style="color: #3be36d;"></i>&nbsp Update your Profile:</h3>
+        <hr>
+        
+
+        <br>
+        <br>
+
+        <form method="POST" autocomplete="off">
+            {% csrf_token %}
+
+            {{user_form.username|as_crispy_field}}
+
+           
+            <br><br>
+
+            {{user_form.email|as_crispy_field}}
+
+            <br>
+
+           
+
+            <button type="submit" class="btn btn-danger rounded btn-block p-2 btn-lg w-100">&nbsp; Update Profile</button>
+
+
+
+        </form>
+
+
+    </div>
+
+    <br>
+    <div class="container bg-white shadow-md p-5 form-layout">
+
+        <h3 class="text-center"><i class="fa-solid fa-trash" style="color: #ff0a0a;"></i> &nbsp; Delete your Profile:</h3>
+        <hr>
+
+        <p>Proceed if you wish to delete your account</p>
+
+        <a class="btn btn-danger rounded btn-block p-2 btn-lg w-100" type="button"  href="{% url 'delete-profile' %}"> Delete your account </a>
+        </div>
+        <br>
+</body>
+</div>
+
+
+
+
+{% endblock %}

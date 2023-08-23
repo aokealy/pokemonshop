@@ -90,8 +90,22 @@ def pokemon_hub(request):
 
 @login_required(login_url='my-login')
 def profile_management(request):
+
+    if request.method == 'POST':
+
+        user_form = UpdateUserForm(request.POST, instance=request.user)
+
+        if user_form.is_valid():
+            user_form.save()
+
+            return redirect('pokemon-hub')
+
+
+    user_form = UpdateUserForm(instance=request.user)  
+
+    context = {'user_form':user_form}       
     
-    return render(request, 'profiles/profile-management.html')
+    return render(request, 'profiles/profile-management.html', context=context)
 
 
 @login_required(login_url='my-login')
