@@ -1,1 +1,47 @@
-<h1>Delete profile</h1>
+{% include "shop/base.html" %}
+
+{% load static %}
+
+{% load crispy_forms_tags %}
+
+
+{% block content %}
+
+
+<div class="login-background">
+<body>
+    <br>
+
+     <div class="container bg-white shadow-md p-5 form-layout">
+
+        <h3 class="text-center"><i class="fa-solid fa-circle-user" style="color: #dd3131;"></i> &nbsp; Profile Deletion:</h3>
+        <hr>
+        
+
+        <br>
+
+        <form method="POST" autocomplete="off">
+            {% csrf_token %}
+
+           <p class="text-center">Are you sure you would like to delete your profile?</p>
+           <br>
+
+            <button type="submit" class="btn btn-danger rounded btn-block p-2 btn-lg w-100">&nbsp; Delete Profile</button>
+
+            <br><br>
+
+            <a class="btn btn-danger rounded btn-block p-2 btn-lg w-100" type="button"  href="{% url 'profile-management' %}"><i class="fa-solid fa-circle-arrow-left" style="color: #e01f1f;"></i>&nbsp Go Back </a>
+
+
+
+        </form>
+
+
+    </div>
+</body>
+</div>
+
+
+
+
+{% endblock %}
