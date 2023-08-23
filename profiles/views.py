@@ -9,6 +9,8 @@ from django.contrib.auth import authenticate, login, logout
 
 from django.contrib.auth.decorators import login_required
 
+from django.contrib import messages
+
 
 # Create your views here.
 
@@ -21,7 +23,8 @@ def register(request):
 
         if form.is_valid():
             user = form.save()
-
+            
+            messages.success(request, "Registration was Successful")
             return redirect("register-success")
 
     context = {"form": form}
@@ -49,7 +52,8 @@ def my_login(request):
 
             if user is not None:
                 auth.login(request, user)
-
+                
+                messages.info(request, "Login was Successful") 
                 return redirect("pokemon-hub")
 
     context = {"form": form}
@@ -70,6 +74,8 @@ def profile_logout(request):
     except KeyError:
         pass
 
+    messages.success(request, "Logout was successful")
+
     return redirect("shop")
 
 
@@ -87,6 +93,7 @@ def profile_management(request):
         if user_form.is_valid():
             user_form.save()
 
+            messages.info(request, "Profile has been updated") 
             return redirect("pokemon-hub")
 
     context = {"user_form": user_form}
@@ -100,7 +107,8 @@ def delete_profile(request):
 
     if request.method == "POST":
         user.delete()
-
+        
+        messages.error(request, "Account has been deleted") 
         return redirect("shop")
 
     return render(request, "profiles/delete-profile.html")

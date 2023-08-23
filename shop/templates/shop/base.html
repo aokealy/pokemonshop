@@ -201,6 +201,28 @@
 
     </nav>
 
+    {% for message in messages %}
+
+    {% if message.level == DEFAULT_MESSAGE_LEVELS.SUCCESS %}
+
+        <h5 id="message-timer" class="alert alert-success text-center"><i class="fa-solid fa-right-from-bracket" style="color: #69f021;"></i> &nbsp; {{message}}</h5>
+    
+        {% endif %}
+
+    {% if message.level == DEFAULT_MESSAGE_LEVELS.ERROR %}
+
+        <h5 id="message-timer" class="alert alert-danger text-center"><i class="fa-solid fa-ban" style="color: #e60f0f;"></i> &nbsp; {{message}}</h5>
+    
+        {% endif %}
+
+    {% if message.level == DEFAULT_MESSAGE_LEVELS.INFO %}
+
+        <h5 id="message-timer" class="alert alert-info text-center"><i class="fa-solid fa-pen-to-square" style="color: #45aded;"></i> &nbsp; {{message}}</h5>
+    
+        {% endif %}
+
+    {% endfor %}
+
 
     <body>
 
@@ -220,6 +242,7 @@
 
 
     </body>
+    <script src="{% static 'js/timer.js' %}"></script>
 
     <footer>
         
