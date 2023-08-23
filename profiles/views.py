@@ -31,6 +31,10 @@ def register(request):
     )
 
 
+def register_success(request):
+    return render(request, "profiles/registration/register-success.html")
+
+
 def my_login(request):
     form = LoginForm()
 
