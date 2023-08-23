@@ -122,7 +122,7 @@
 
                     <li class="nav-item">
                 
-                        <a class="btn btn-alert navbar-btn text-white" type="button"  href="{% url 'pokemon-hub' %}"><i class="fa-solid fa-house-user" style="color: #45c9b3;"></i> &nbsp; Pokemon Hub </a>
+                        <a class="btn btn-alert navbar-btn text-white" type="button"  href="{% url 'pokemon-hub' %}"><i class="fa-solid fa-house-user fa-lg" style="color: #45c9b3;"></i> &nbsp; Pokemon Hub </a>
 
                     </li>
 
@@ -135,12 +135,23 @@
                     </li>
                     {% endif %}
 
+                    {% if user.is_authenticated %}
 
                     <li class="nav-item">
 
-                        <a class="btn btn-alert navbar-btn text-white" type="button"  href="{% url 'my-login' %}"><i class="fa-solid fa-right-to-bracket fa-lg" style="color: #83ba36;"></i>&nbsp; Login </a>
+                        <a class="btn btn-alert navbar-btn text-white" type="button"  href="{% url 'profile-logout' %}"><i class="fa-solid fa-right-from-bracket fa-lg" style="color: #d1c623;"></i>&nbsp; Logout </a>
 
                     </li>
+                    {% else %}
+
+
+                        <li class="nav-item">
+
+                            <a class="btn btn-alert navbar-btn text-white" type="button"  href="{% url 'my-login' %}"><i class="fa-solid fa-right-to-bracket fa-lg" style="color: #83ba36;"></i>&nbsp; Login </a>
+
+                        </li>
+
+                    {% endif %}
 
 
                 &nbsp; &nbsp; &nbsp;
