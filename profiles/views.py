@@ -2,6 +2,9 @@ from django.shortcuts import redirect, render
 
 from .forms import CreateUserForm
 
+
+
+
 # Create your views here.
 
 def register(request):
