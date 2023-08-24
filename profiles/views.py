@@ -2,10 +2,13 @@ from django.shortcuts import redirect, render
 
 from .forms import CreateUserForm, LoginForm, UpdateUserForm
 
+from payment.forms import ShippingForm
+from payment.models import ShippingAddress
+
 from django.contrib.auth.models import User
 
 from django.contrib.auth.models import auth
-from django.contrib.auth import authenticate, login, logout
+from django.contrib.auth import authenticate
 
 from django.contrib.auth.decorators import login_required
 
@@ -112,3 +115,37 @@ def delete_profile(request):
         return redirect("shop")
 
     return render(request, "profiles/delete-profile.html")
+
+# shipping view
+@login_required(login_url='my-login')
+def manage_shipping(request):
+
+    try:
+        #account user with shipping information
+
+        shipping = ShippingAddress.objects.get(user=request.user.id) 
+
+    except ShippingAddress.DoesNotExist:
+
+        shipping = None
+
+    form = ShippingForm(instance=shipping)  
+
+    if request.method == 'POST':
+        form = ShippingForm(request.POST, instance=shipping)
+
+        if form.is_valid():
+            # assign foreign key to object
+
+            shipping_user = form.save(commit=False)
+            # adding the foreign key
+            shipping_user.user = request.user
+
+            shipping_user.save()
+            messages.info(request, "Shipping has been updated") 
+
+            return redirect('pokemon-hub')
+
+    context = {'form':form} 
+
+    return render(request, 'profiles/shipping.html', context=context) 
