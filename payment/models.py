@@ -10,3 +10,6 @@ class ShippingAddress(models.Model):
     address2 = models.CharField(max_length=255)
     city = models.CharField(max_length=250)
     zipcode = models.CharField(max_length=250, null=True, blank=True)
+
+      # Foreign Key to link user to shipping
+    user = models.ForeignKey(User, on_delete=models.CASCADE, null=True, blank=True)
