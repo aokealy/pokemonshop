@@ -24,13 +24,6 @@ def final_checkout(request):
          return render(request, 'payment/final-checkout.html')
 
 
-def payment_successful(request):
-    return render(request, 'payment/payment-successful.html')
-
-
-def payment_failure(request):
-    return render(request, 'payment/payment-failure.html')    
-
 
 def complete_purchase(request):
     if request.POST.get("action") == "post":
@@ -94,4 +87,19 @@ def complete_purchase(request):
         response = JsonResponse({"success": purchase_success})
 
         return response
+
+
+def payment_successful(request):
+     # clear the cart when order complete
+
+    for key in list(request.session.keys()):
+        if key == "session_key":
+            del request.session[key]
+
+    return render(request, 'payment/payment-successful.html')
+
+
+def payment_failure(request):
+    return render(request, 'payment/payment-failure.html')    
+
     
