@@ -1,5 +1,6 @@
 from django.shortcuts import render
-from .models import ShippingAddress
+from .models import ShippingAddress, Purchase, PurchaseItem
+from checkout.checkout import Checkout
 
 # Create your views here.
 def final_checkout(request):
@@ -43,4 +44,10 @@ def complete_purchase(request):
         shipping_address = (
             address1 + "\n" + address2 + "\n" + city + "\n" + zipcode + "\n"
         )
+
+         # cart info
+        checkout = Checkout(request)
+
+        # total price of items
+        total_cost = checkout.get_total()
     
