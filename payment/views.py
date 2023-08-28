@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from .models import ShippingAddress, Purchase, PurchaseItem
 from checkout.checkout import Checkout
+from django.http import JsonResponse
 
 # Create your views here.
 def final_checkout(request):
@@ -45,9 +46,52 @@ def complete_purchase(request):
             address1 + "\n" + address2 + "\n" + city + "\n" + zipcode + "\n"
         )
 
-         # cart info
+         # checkout info
         checkout = Checkout(request)
 
         # total price of items
         total_cost = checkout.get_total()
+
+        # authenticated users for checkout when making purchase
+        if request.user.is_authenticated:
+            purchase = Purchase.objects.create(
+                full_name=name,
+                email=email,
+                shipping_address=shipping_address,
+                amount_paid=total_cost,
+                user=request.user,
+            )
+            purchase_id = purchase.pk
+
+            for item in checkout:
+                PurchaseItem.objects.create(
+                    purchase_id=purchase_id,
+                    product=item["product"],
+                    quantity=item["qty"],
+                    price=item["price"],
+                    user=request.user,
+                )
+         # guest users checkout when placing order
+        else:
+            purchase = Purchase.objects.create(
+                full_name=name,
+                email=email,
+                shipping_address=shipping_address,
+                amount_paid=total_cost,
+            )
+
+            purchase_id = purchase.pk
+
+            for item in checkout:
+                PurchaseItem.objects.create(
+                    purchase_id=purchase_id,
+                    product=item["product"],
+                    quantity=item["qty"],
+                    price=item["price"],
+                )
+
+        purchase_success = True
+        response = JsonResponse({"success": purchase_success})
+
+        return response
     
