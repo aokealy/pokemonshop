@@ -51,7 +51,7 @@ def complete_purchase(request):
                 full_name=name,
                 email=email,
                 shipping_address=shipping_address,
-                amount_paid=total_cost,
+                amount_purchased=total_cost,
                 user=request.user,
             )
             purchase_id = purchase.pk
@@ -70,7 +70,7 @@ def complete_purchase(request):
                 full_name=name,
                 email=email,
                 shipping_address=shipping_address,
-                amount_paid=total_cost,
+                amount_purchased=total_cost,
             )
 
             purchase_id = purchase.pk
