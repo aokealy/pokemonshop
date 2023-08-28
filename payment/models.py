@@ -2,6 +2,8 @@ from django.db import models
 
 from django.contrib.auth.models import User
 
+from shop.models import Product
+
 class ShippingAddress(models.Model):
 
     full_name = models.CharField(max_length=250)
@@ -19,4 +21,20 @@ class ShippingAddress(models.Model):
 
     def __str__(self):
         return 'Shipping Address -' + str(self.id)    
+
+
+class Purchase(models.Model):
+
+    full_name = models.CharField(max_length=250)
+    email = models.EmailField(max_length=200)
+    shipping_address = models.TextField(max_length=5000)
+    amount_purchased = models.DecimalField(max_digits=8, decimal_places=2)
+    date_purchased = models.DateTimeField(auto_now_add=True)
+
+    user = models.ForeignKey(User, on_delete=models.CASCADE, null=True, blank=True)
+
+    def __str__(self):
+
+        return 'Order - #' + str(self.id)
+
 
