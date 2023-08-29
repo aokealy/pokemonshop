@@ -68,7 +68,7 @@ def my_login(request):
 def profile_logout(request):
     try:
         for key in list(request.session.keys()):
-            if key == "session_key":
+            if key == "session-key":
                 continue
 
             else:
