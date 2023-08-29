@@ -124,11 +124,18 @@
 </div>
 
 
+
     <!-- Ajax integration -->
 
     
 
     <script>
+         // total price
+
+       var total_price = '{{checkout.get_total}}';
+
+
+
         // Paypal Intergration
 
         const paypalButtonsComponent = paypal.Buttons({
@@ -236,7 +243,7 @@
                     purchase_units: [
                         {
                             amount: {
-                                value: "88.44"
+                                value: total_price
                             }
                         }
                     ]
