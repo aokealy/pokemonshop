@@ -1,1 +1,29 @@
-<h2>Payment has been successful!!!</h2>
+{% include "shop/base.html" %}
+
+{% load static %}
+
+{% block content %}
+
+<div class="login-background">
+
+<body>
+    <br>
+
+     <div class="container bg-white shadow-md p-5 form-layout h-50">
+        <div class="text-center">
+            <i class="fa-solid fa-credit-card fa-4x" style="color: #2ce238;"></i>
+        <br><br>
+
+        <h3><strong> Your Payment was Sucessful!</strong></h3>
+        <hr>
+
+        <h4>Your purchase was Sucessful in payment! &nbsp;<i class="fa-solid fa-face-smile-wink" style="color: #44df30;"></i></h4>
+        
+    </div>
+</div>
+
+</body>
+</div>
+
+
+{% endblock %}
