@@ -93,7 +93,7 @@ def payment_successful(request):
      # clear the cart when order complete
 
     for key in list(request.session.keys()):
-        if key == "session_key":
+        if key == 'session-key':
             del request.session[key]
 
     return render(request, 'payment/payment-successful.html')
