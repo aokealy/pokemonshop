@@ -229,10 +229,6 @@
                         }
     
     
-    
-    
-    
-    
             },
     
             // set up the transaction
@@ -257,6 +253,40 @@
                 const captureOrderHandler = (details) => {
                     const payerName = details.payer.name.given_name;
                     console.log('Transaction completed');
+
+                    $.ajax({
+
+                        type: 'POST',
+                        url: '{% url "complete-purchase" %}',
+                        data: {
+                            name: $('#name').val(),
+                            email: $('#email').val(),
+                            address1: $('#address1').val(),
+                            address2: $('#address2').val(),
+                            city: $('#city').val(),
+                            zipcode: $('#zipcode').val(),
+                
+                            
+                            csrfmiddlewaretoken: "{{csrf_token}}",
+                            action: 'post'
+                
+                
+                
+                },
+                
+                success: function(json){
+                
+                    //console.log(json)
+                
+                    window.location.replace("{% url 'payment-successful'%}");
+                },
+                
+                error: function(xhr, errmsg, err){
+                    window.location.replace("{% url 'payment-failure'%}");
+                
+                }
+                
+                });
     
     
                 };
@@ -278,69 +308,8 @@
             .catch((err) => {
                 console.error('PayPal Buttons failed to render');
             });
-
-
-
-
-        // complete the purchase
-        /*
-    $(document).on('submit', function(e){
-
-        e.preventDefault();
-
-        $.ajax({
-
-            type: 'POST',
-            url: '{% url "complete-purchase" %}',
-            
-            data: {
-                    name: $('#name').val(),
-                    email: $('#email').val(),
-                    address1: $('#address1').val(),
-                    address2: $('#address2').val(),
-                    city: $('#city').val(),
-                    zipcode: $('#zipcode').val(),
-        
-
-               
-                    csrfmiddlewaretoken: "{{csrf_token}}",
-                    action: 'post'
-
-            },
-
-            success: function(json){
-
-                //console.log(json)
-
-                window.location.replace("{% url 'payment-successful'%}");
-
-               
-
-             
-
-
-            },
-
-            error: function(xhr, errmsg, err){
-
-                window.location.replace("{% url 'payment-failure'%}");
-
-        }
-
-        });
-
-
-
-    })
- */
-
     
-
-
    </script>
-
-
-
 
 
 {% endblock %}
