@@ -1,0 +1,64 @@
+{% include "shop/base.html" %}
+
+{% load static %}
+
+{% load crispy_forms_tags %}
+
+
+{% block content %}
+
+<div class="register-background">
+<body>
+<br>
+
+<div class="container bg-white shadow-md p-5 form-layout w-50">
+
+    <h3 class="text-center"> <i class="fa-solid fa-arrow-down-wide-short" style="color: #35d4ba;"></i> &nbsp; My Purchases: </h3>
+
+    <br>
+
+    <p class="text-center"> View all of your Purchases. </p>
+
+    <hr>
+
+
+</div>
+
+<br>
+
+<div class="container bg-white shadow-md p-5 form-layout w-50 ">
+
+    {% for purchase in purchases %}
+
+        <strong> <i class="fa-solid fa-rectangle-list" style="color: #30d5d2;"></i> &nbsp;  Purchase Number -  {{purchase.id}} </strong>
+        
+        <br> <br>
+
+        {{purchase.product}}
+
+        <br> <br>
+
+        Quantity x {{purchase.quantity}}
+
+        <br> <br>
+
+        $ {{purchase.price}}
+
+        <br> <br>
+
+        
+        <hr>
+
+
+    {% endfor %}
+
+</div>
+
+<br>
+</body>
+</div>
+
+
+
+
+{% endblock %}

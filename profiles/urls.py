@@ -15,6 +15,10 @@ urlpatterns = [
         name="profile-management",
     ),
     path("delete-profile", views.delete_profile, name="delete-profile"),
+
      # shipping url 
     path('manage-shipping', views.manage_shipping, name='manage-shipping'), 
+
+    # track purchases url
+    path('track-purchases', views.track_purchases, name='track-purchases'),
 ]

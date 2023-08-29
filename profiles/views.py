@@ -6,6 +6,7 @@ from payment.forms import ShippingForm
 from payment.models import ShippingAddress
 
 from django.contrib.auth.models import User
+from payment.models import Purchase, PurchaseItem
 
 from django.contrib.auth.models import auth
 from django.contrib.auth import authenticate
@@ -149,3 +150,17 @@ def manage_shipping(request):
     context = {'form':form} 
 
     return render(request, 'profiles/shipping.html', context=context) 
+
+
+@login_required(login_url='my-login')
+def track_purchases(request):
+
+    try:
+        purchases =  PurchaseItem.objects.filter(user=request.user)
+
+        context = {'purchases':purchases}
+
+        return render(request, 'profiles/track-purchases.html', context=context)
+
+    except:
+        return render(request, 'profiles/track-purchases.html')
