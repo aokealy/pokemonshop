@@ -1,7 +1,21 @@
 # UX Design
+
+## Wireframes:
+
+## Typhography:
+
 ## Colour Scheme
 - Used a boostrap theme called Journal which gives off a nice orange tone.
 - The colours that were used during this project were based off Pokemon colours from different ones such as pikachu, charizard, squirtle etc..
+
+# Testing
+
+## Automated Testing: 
+
+## Manual Testing:
+- Test Registration system (working)
+- Test Login (working)
+- Test Logout (working)
 
 
 # Reference
@@ -15,3 +29,7 @@
 - https://getbootstrap.com/docs/4.0/components/card/ - bootstrap cards
 - https://www.color-hex.com/color-palette/105957 - caterpile colours
 - https://pypi.org/project/django-mathfilters/ - django mathfilters
+- https://developer.paypal.com/home - Paypal Sandbox
+- https://developer.paypal.com/integration-builder/ - integrate PayPal
+- https://developer.paypal.com/docs/regional/th/checkout/integration-features/customize-button/ - PayPal buttons
+- https://developer.paypal.com/docs/checkout/standard/customize/validate-user-input/ - PayPal validate User Input
