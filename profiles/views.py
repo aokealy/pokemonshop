@@ -27,7 +27,7 @@ def register(request):
 
         if form.is_valid():
             user = form.save()
-            
+
             messages.success(request, "Registration was Successful")
             return redirect("register-success")
 
@@ -56,8 +56,8 @@ def my_login(request):
 
             if user is not None:
                 auth.login(request, user)
-                
-                messages.info(request, "Login was Successful") 
+
+                messages.info(request, "Login was Successful")
                 return redirect("pokemon-hub")
 
     context = {"form": form}
@@ -97,7 +97,7 @@ def profile_management(request):
         if user_form.is_valid():
             user_form.save()
 
-            messages.info(request, "Profile has been updated") 
+            messages.info(request, "Profile has been updated")
             return redirect("pokemon-hub")
 
     context = {"user_form": user_form}
@@ -111,28 +111,27 @@ def delete_profile(request):
 
     if request.method == "POST":
         user.delete()
-        
-        messages.error(request, "Account has been deleted") 
+
+        messages.error(request, "Account has been deleted")
         return redirect("shop")
 
     return render(request, "profiles/delete-profile.html")
 
+
 # shipping view
-@login_required(login_url='my-login')
+@login_required(login_url="my-login")
 def manage_shipping(request):
-
     try:
-        #account user with shipping information
+        # account user with shipping information
 
-        shipping = ShippingAddress.objects.get(user=request.user.id) 
+        shipping = ShippingAddress.objects.get(user=request.user.id)
 
     except ShippingAddress.DoesNotExist:
-
         shipping = None
 
-    form = ShippingForm(instance=shipping)  
+    form = ShippingForm(instance=shipping)
 
-    if request.method == 'POST':
+    if request.method == "POST":
         form = ShippingForm(request.POST, instance=shipping)
 
         if form.is_valid():
@@ -143,24 +142,25 @@ def manage_shipping(request):
             shipping_user.user = request.user
 
             shipping_user.save()
-            messages.info(request, "Shipping has been updated") 
+            messages.info(request, "Shipping has been updated")
 
-            return redirect('pokemon-hub')
+            return redirect("pokemon-hub")
 
-    context = {'form':form} 
+    context = {"form": form}
 
-    return render(request, 'profiles/shipping.html', context=context) 
+    return render(request, "profiles/shipping.html", context=context)
 
 
-@login_required(login_url='my-login')
+@login_required(login_url="my-login")
 def track_purchases(request):
-
     try:
-        purchases =  PurchaseItem.objects.filter(user=request.user)
+        purchases = PurchaseItem.objects.filter(user=request.user)
 
-        context = {'purchases':purchases}
+        context = {"purchases": purchases}
 
-        return render(request, 'profiles/track-purchases.html', context=context)
+        return render(
+            request, "profiles/track-purchases.html", context=context
+        )
 
     except:
-        return render(request, 'profiles/track-purchases.html')
+        return render(request, "profiles/track-purchases.html")

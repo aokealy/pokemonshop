@@ -3,6 +3,7 @@ from .models import ShippingAddress, Purchase, PurchaseItem
 from checkout.checkout import Checkout
 from django.http import JsonResponse
 
+
 # Create your views here.
 def final_checkout(request):
     # User with account - pre fill the form
@@ -10,19 +11,22 @@ def final_checkout(request):
     if request.user.is_authenticated:
         try:
             # authenticated users with shipping info
-            shipping_address = ShippingAddress.objects.get(user=request.user.id)
+            shipping_address = ShippingAddress.objects.get(
+                user=request.user.id
+            )
 
             context = {"shipping": shipping_address}
 
-            return render(request, "payment/final-checkout.html", context=context)
+            return render(
+                request, "payment/final-checkout.html", context=context
+            )
 
         except:
             # authenticated users with no shipping info
             return render(request, "payment/final-checkout.html")
     else:
         # guest user
-         return render(request, 'payment/final-checkout.html')
-
+        return render(request, "payment/final-checkout.html")
 
 
 def complete_purchase(request):
@@ -39,7 +43,7 @@ def complete_purchase(request):
             address1 + "\n" + address2 + "\n" + city + "\n" + zipcode + "\n"
         )
 
-         # checkout info
+        # checkout info
         checkout = Checkout(request)
 
         # total price of items
@@ -64,7 +68,7 @@ def complete_purchase(request):
                     price=item["price"],
                     user=request.user,
                 )
-         # guest users checkout when placing order
+        # guest users checkout when placing order
         else:
             purchase = Purchase.objects.create(
                 full_name=name,
@@ -90,16 +94,14 @@ def complete_purchase(request):
 
 
 def payment_successful(request):
-     # clear the cart when order complete
+    # clear the cart when order complete
 
     for key in list(request.session.keys()):
-        if key == 'session-key':
+        if key == "session-key":
             del request.session[key]
 
-    return render(request, 'payment/payment-successful.html')
+    return render(request, "payment/payment-successful.html")
 
 
 def payment_failure(request):
-    return render(request, 'payment/payment-failure.html')    
-
-    
+    return render(request, "payment/payment-failure.html")
