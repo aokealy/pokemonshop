@@ -11,6 +11,11 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 
 from pathlib import Path
+import os
+import dj_database_url
+if os.path.isfile('env.py'):
+    import env
+
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -20,12 +25,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-q=g)29nl(q0wkh!fioi8!1t27$xsqev#0o3l68ygt+%4$6*e0!'
+SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-aokealy-pokemonshop-kb1obm1p4qn.ws-eu104.gitpod.io', 'localhost']
+ALLOWED_HOSTS = ['8000-aokealy-pokemonshop-kb1obm1p4qn.ws-eu104.gitpod.io', 'pokemon-shop-ecommerce-ee0b37d9ff00.herokuapp.com', 'localhost']
 
 
 # Application definition
@@ -87,12 +92,16 @@ WSGI_APPLICATION = 'pokemonshop.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
+#     }
+# }
+
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
-}
+     'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
+ }
 
 
 # Password validation

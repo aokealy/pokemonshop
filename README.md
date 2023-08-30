@@ -21,13 +21,14 @@
 - Test Add Product to checkout (working)
 - Test Update Product in checkout (working)
 - Test Delete Product in checkout (working)
+- Test checkout sessions (working)
 - Test Profile Management update username and email(working)
 - Test Delete Profile(working)
 - Test Shipping Address form (working)
 - Test Paypal payment (working)
 - Test redirected to success and checkout cleared(working)
 - Test Track purchases (working)
-- Test autenticated Users only access to pokemon hub page (working)
+- Test authenticated Users only access to pokemon hub page (working)
 
 
 # Reference
