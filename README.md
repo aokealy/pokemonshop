@@ -16,6 +16,18 @@
 - Test Registration system (working)
 - Test Login (working)
 - Test Logout (working)
+- Test Filter Products (working)
+- Test clicking on Product (working)
+- Test Add Product to checkout (working)
+- Test Update Product in checkout (working)
+- Test Delete Product in checkout (working)
+- Test Profile Management update username and email(working)
+- Test Delete Profile(working)
+- Test Shipping Address form (working)
+- Test Paypal payment (working)
+- Test redirected to success and checkout cleared(working)
+- Test Track purchases (working)
+- Test autenticated Users only access to pokemon hub page (working)
 
 
 # Reference
