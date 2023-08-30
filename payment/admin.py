@@ -5,4 +5,3 @@ from . models import ShippingAddress, Purchase, PurchaseItem
 admin.site.register(ShippingAddress)
 admin.site.register(Purchase)
 admin.site.register(PurchaseItem)
-
