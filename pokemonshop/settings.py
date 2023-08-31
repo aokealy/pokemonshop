@@ -28,7 +28,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = 'DEVELOPMENT' in os.environ
+DEBUG = False
 
 ALLOWED_HOSTS = ['8000-aokealy-pokemonshop-kb1obm1p4qn.ws-eu104.gitpod.io', 'pokemon-shop-ecommerce-ee0b37d9ff00.herokuapp.com', 'localhost']
 
