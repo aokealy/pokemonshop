@@ -1,5 +1,6 @@
 {% load static %}
 
+
 <!DOCTYPE html>
 
 <html>
@@ -11,8 +12,12 @@
 
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
+        {% block meta %}
+       
+        {% endblock %}
 
-	  <title> Pokemon | Shop </title>
+
+        {% block title %}<title>Pokemon | shop</title>{% endblock %}
 
 
 
@@ -243,10 +248,6 @@
 
     </body>
     <script src="{% static 'js/timer.js' %}"></script>
-
-    <footer>
-        
-    </footer>
 
 </html>
 

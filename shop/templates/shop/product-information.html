@@ -3,6 +3,17 @@
 
 {% load static %}
 
+
+{% block meta %}
+        <meta name="description" content="This is a pokemon shop to buy pokemon graded cards and normal cards">
+        <meta name="keywords" content="Pokemon, graded cards, pikachu, charizard, pokemon shop">
+        <meta name="author" content="Pokemon Shop">
+        <meta property="og:title" content="Pokemon Shop | {{ product.title }}">
+        <meta property="og:description" content="{{ product.description }}">
+        <meta property="og:type" content="article">
+
+{% endblock %}
+
 {% block content %}
 
 <div class="container">

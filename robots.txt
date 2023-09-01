@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /admin/
+Sitemap: https://pokemon-shop-ecommerce-ee0b37d9ff00.herokuapp.com/sitemap.xml
