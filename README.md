@@ -5,7 +5,7 @@
 ## Typhography:
 
 ## Colour Scheme
-- Used a boostrap theme called Journal which gives off a nice orange tone.
+- Used a boostrap theme called Journal which gives off a nice red tone.
 - The colours that were used during this project were based off Pokemon colours from different ones such as pikachu, charizard, squirtle etc..
 
 # Features
@@ -34,6 +34,22 @@
 - Test authenticated Users only access to pokemon hub page (working)
 
 ## Manual JavaScript Testing
+
+FEATURES:
+========
+
+* Django allows us to create a full functioning websites for the backend
+* Postgres was used for static files and s3
+* UserCreationForm was used for Autentication to be able to login and logout and keep it secure
+* Paypal was used for the payment system. 
+* Website is design using mobile-first approach.
+* SEO for good search optimisation 
+* Sort by function 
+* add to cart functionality to display items in checkout
+* Purchases to show after payment is complete
+* Bootstrap for the frontend 
+* heroku to host website
+
 
 Ecommerce Business Model:
 ========
@@ -70,6 +86,7 @@ TECHNOLOGIES:
 The following languages, frameworks, libraries, and tools were used to construct this project. 
 * HTML
 * CSS
+* Javascript/ajax
 * Bootstrap (https://getbootstrap.com/) : This project uses Bootstrap to simplify the development of the webpage
 * Python 
 * Django
