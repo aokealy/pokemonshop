@@ -1,3 +1,8 @@
+# Project 5
+- Welcome to my Project 5 Eccomerce store where I created a Pokemon Shop since I am a passionate fan of Pokemon and wanted to try and create my very own store :)
+- Here are the links to the deployed version of my website and my Github Repository!
+-
+-
 # UX Design
 
 ## Wireframes:
