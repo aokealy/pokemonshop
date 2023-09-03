@@ -41,7 +41,44 @@
 # User Stories:
 
 # Features:
+- Be able to register for a profile
+<hr>
+<img src="static/media/register.PNG">
+- Be able to login after registration
+<hr>
+<img src="static/media/login.PNG">
+- Be able to browse Shop
+<hr>
+<img src="static/media/shop.PNG">
+- Be able to view a product information
+<hr>
+<img src="static/media/product-information.PNG">
+- Be able to view Pokemon Hub for only logged in users
+<hr>
+<img src="static/media/pokemon-hub.PNG">
+- Be able to view recent purchases history for logged in users
+<hr>
+<img src="static/media/track-purchases.PNG">
+- Be able to manage profile details such as username and email for logged in users
+<hr>
+<img src="static/media/profile-management.PNG">
+- Be able to delete your profile for logged in users
+<hr>
+<img src="static/media/profile-deletion.PNG">
+- Be able to edit and make changes to shipping form for logged in users
+<hr>
+- Be able to checkout page for either logged in or non logged in users and being able to update or delete items in checkout
+<img src="static/media/checkout.PNG">
+- Be able to fill in shipping information unless pre-filled for logged in users and be able to pay through paypal
+<hr>
+<img src="static/media/complete-checkout.PNG">
+
 ## Future Features:
+- Create emails registration where user can verify accounts
+- Users to leave reviews on products
+- User to give feedback system such as ratings
+- User to contact sellers
+- User to pay than one payment system
 
 # Testing:
 
