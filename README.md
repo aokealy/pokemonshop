@@ -4,6 +4,9 @@
 - https://pokemon-shop-ecommerce-ee0b37d9ff00.herokuapp.com/ - Heroku App
 - https://github.com/aokealy/pokemonshop - Github Repository
 # UX Design
+## Mockup:
+<img src="static/media/all-devices-black.png">
+
 
 ## Wireframes:
 - This is a wirframe of the login and Register where I wanted a box shape in the centre to dominate so user fixates on that.
