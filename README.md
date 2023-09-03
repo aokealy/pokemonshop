@@ -1,8 +1,8 @@
 # Project 5
 - Welcome to my Project 5 Eccomerce store where I created a Pokemon Shop since I am a passionate fan of Pokemon and wanted to try and create my very own store :)
 - Here are the links to the deployed version of my website and my Github Repository!
--
--
+- https://pokemon-shop-ecommerce-ee0b37d9ff00.herokuapp.com/ - Heroku App
+- https://github.com/aokealy/pokemonshop - Github Repository
 # UX Design
 
 ## Wireframes:
@@ -21,9 +21,28 @@
 ## Automated Testing: 
 
 ## Manual Testing:
-- Test Registration system (working)
-- Test Login (working)
-- Test Logout (working)
+- For Manual Testing I tested everything referencing the User Stories I created in the Project section of my Github Repository to follow through and test manually each function.
+## Test Registration System: 
+- Test that user can register an account (working)
+- User to fill out required fields to register (working)
+- User to be redirected to Register success page (working)
+- User to login after Register Login Page (working)
+- User to be able to access features when creating account (working)
+- User can still shop even not registered (working)
+
+## Test Login (working)
+- User to be able to login (working)
+- User to login after registration (working)
+- User to be able to login with username and password (working)
+- User to be able to go to register page from login page (working)
+- User will get message saying user has logged in successfully (working)
+- User to be able to have access to features only for login users (working)
+## Test Logout (working)
+- User to be able to logout from any page since it will have logout button (working)
+- Logged in Users will only see logout button (working)
+- User message will appear after user logs out (working)
+- User will no longer see features for logged in users after logging out (working)
+
 - Test Filter Products (working)
 - Test clicking on Product (working)
 - Test Add Product to checkout (working)
@@ -43,17 +62,7 @@
 FEATURES:
 ========
 
-* Django allows us to create a full functioning websites for the backend
-* Postgres was used for static files and s3
-* UserCreationForm was used for Autentication to be able to login and logout and keep it secure
-* Paypal was used for the payment system. 
-* Website is design using mobile-first approach.
-* SEO for good search optimisation 
-* Sort by function 
-* add to cart functionality to display items in checkout
-* Purchases to show after payment is complete
-* Bootstrap for the frontend 
-* heroku to host website
+
 
 
 Ecommerce Business Model:
@@ -97,7 +106,7 @@ The following languages, frameworks, libraries, and tools were used to construct
 * Django
 * Sqlite3
 * Heroku
-* stripe 
+* PayPal 
 * Postgres 
 
 Frameworks:
