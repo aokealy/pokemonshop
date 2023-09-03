@@ -122,6 +122,9 @@
 - Test authenticated Users only access to pokemon hub page (working)
 
 ## Manual JavaScript Testing:
+Before implementing the Ajax checkout process I tested my code using shell where I could render that the session was working and returning the session id so it would display in the terminal what was currently in the checkout whiched worked well.
+<hr>
+<img src="static/media/test_checkout.PNG">
 
 ## Additional Testing:
 - Lighthouse Report
