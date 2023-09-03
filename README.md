@@ -6,6 +6,28 @@
 # UX Design
 
 ## Wireframes:
+- This is a wirframe of the login and Register where I wanted a box shape in the centre to dominate so user fixates on that.
+<hr>
+<img src="static/media/register-login-wireframe.PNG">
+
+- This is the main page where you will find all the products on the page. I want to show what items are available and also entice people to create a profile.
+<hr>
+<img src="static/media/shop-wireframe.PNG">
+- Product information gives you a description with the price and a quantity selector. 
+<hr>
+<img src="static/media/product-information-wireframe.PNG">
+- Final Checkout where you fill out your details and have access to payment buttons with simple layout.
+<hr>
+<img src="static/media/final-checkout-wireframe.PNG">
+- Pokemon Hub where logged in Users will have access and easy to access with easy layout.
+<hr>
+<img src="static/media/pokemon-hub-wireframe.PNG">
+- Shipping Form similar to final checkout form where the layout is easy and tells you what to fill in.
+<hr>
+<img src="static/media/shipping-form-wireframe.PNG">
+- Profile Management where it is easy to update and Profile and also delete profile with big buttons and in center for user to easily read and understand.
+<hr>
+<img src="static/media/profile-management-wireframe.PNG">
 
 ## Typhography:
 
@@ -13,10 +35,12 @@
 - Used a boostrap theme called Journal which gives off a nice red tone.
 - The colours that were used during this project were based off Pokemon colours from different ones such as pikachu, charizard, squirtle etc..
 
-# Features
-## Future Features
+# User Stories:
 
-# Testing
+# Features:
+## Future Features:
+
+# Testing:
 
 ## Automated Testing: 
 
@@ -57,10 +81,19 @@
 - Test Track purchases (working)
 - Test authenticated Users only access to pokemon hub page (working)
 
-## Manual JavaScript Testing
+## Manual JavaScript Testing:
 
-FEATURES:
+## Additional Testing:
+- Lighthouse Report
+<img src="static/media/lighthouse-report.PNG">
+
+- CSS Validator 
+<img src="static/media/css_validator.PNG">
+
+
+BUGS:
 ========
+
 
 
 
@@ -137,7 +170,7 @@ The application is developed using Django and extensively uses built-in function
 
 
 
-# Reference
+# References:
 - https://getbootstrap.com/docs/4.6/getting-started/introduction/ - bootstrap
 - https://bootswatch.com/journal/ - bootsrtrap theme
 - https://fontawesome.com/ - fontawesome icons
