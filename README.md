@@ -78,6 +78,11 @@
 
 ## Feed Back system 
 - I used Django messages to return a feedback system where users can 
+- When a user logs in a message will appear
+<img src="static/media/django-messages.PNG">
+- When a user logs out a message will appear
+<img src="static/media/django-messages1.PNG">
+
 
 ## Future Features:
 - Create emails registration where user can verify accounts
