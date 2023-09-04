@@ -89,6 +89,10 @@
 # Testing:
 
 ## Automated Testing: 
+- I used Django Unnitest for automated testing where we test using testcase and we create a coverage report that show all test within an app.
+- The first app I tested Payments Forms, views, models and urls.
+<img src="static/media/coverage-payment.PNG">
+
 
 ## Manual Testing:
 - For Manual Testing I tested everything referencing the User Stories I created in the Project section of my Github Repository to follow through and test manually each function.
