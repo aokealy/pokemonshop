@@ -167,7 +167,9 @@ BUGS:
 
 
 
-
+Facebook Page:
+========
+<img src="static/media/facebook.PNG">
 
 Ecommerce Business Model:
 ========
