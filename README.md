@@ -1,5 +1,5 @@
 # Project 5
-- Welcome to my Project 5 Eccomerce store where I created a Pokemon Shop since I am a passionate fan of Pokemon and wanted to try and create my very own store. In this project I demostrate a payment system Paypal and use CRUD functionallity for users to be able to update and delete items :)
+- Welcome to my Project 5 Eccomerce store where I created a Pokemon Shop since I am a passionate fan of Pokemon and wanted to try and create my very own store. In this project I demostrate a payment system Paypal and use CRUD functionallity for users to be able to update and delete items and also create profile, update profile and delete profile! :)
 - Here are the links to the deployed version of my website and my Github Repository!
 - https://pokemon-shop-ecommerce-ee0b37d9ff00.herokuapp.com/ - Heroku App
 - https://github.com/aokealy/pokemonshop - Github Repository
@@ -62,7 +62,7 @@
 - Be able to view recent purchases history for logged in users and see what they have purchased, the price and the quantity.
 <hr>
 <img src="static/media/track-purchases.PNG">
-- Be able to manage profile details such as username and email for logged in users which is only exclusive to logged in users.
+- Be able to manage profile details such as username and email for logged in users which is only exclusive to logged in users which is my CRUD functionallity where the user can create a profile, update their profile and delete their profile.
 <hr>
 <img src="static/media/profile-management.PNG">
 - Be able to delete your profile for logged in users so when deleting your profile everything linked such as recent purchases and name and email will be deleted.
