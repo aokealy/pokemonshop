@@ -44,31 +44,31 @@
 - https://github.com/users/aokealy/projects/6/views/1
 
 # Features:
-- Be able to register for a profile
+- Be able to register for a profile without accessing the admin page.
 <hr>
 <img src="static/media/register.PNG">
-- Be able to login after registration
+- Be able to login after the user has created a profile and can login by entering the username and password that they provided and not need to use the admin page to login.
 <hr>
 <img src="static/media/login.PNG">
-- Be able to browse Shop
+- Be able to browse Shop and filter the products based on the two categories as to what they are looking for and display all products on the main shop page too.
 <hr>
 <img src="static/media/shop.PNG">
-- Be able to view a product information
+- Be able to click on a product title and bring that user to a new page where you will see new information on that product such as the description and the set it comes from. Also be able to update the quantity of the product to when adding to checkout.
 <hr>
 <img src="static/media/product-information.PNG">
-- Be able to view Pokemon Hub for only logged in users
+- Be able to view Pokemon Hub for only logged in users where they get special access to features that only registered users can see. 
 <hr>
 <img src="static/media/pokemon-hub.PNG">
-- Be able to view recent purchases history for logged in users
+- Be able to view recent purchases history for logged in users and see what they have purchased, the price and the quantity.
 <hr>
 <img src="static/media/track-purchases.PNG">
-- Be able to manage profile details such as username and email for logged in users
+- Be able to manage profile details such as username and email for logged in users which is only exclusive to logged in users.
 <hr>
 <img src="static/media/profile-management.PNG">
-- Be able to delete your profile for logged in users
+- Be able to delete your profile for logged in users so when deleting your profile everything linked such as recent purchases and name and email will be deleted.
 <hr>
 <img src="static/media/profile-deletion.PNG">
-- Be able to edit and make changes to shipping form for logged in users
+- Be able to edit and make changes to shipping form for logged in users and have prefilled information so when paying at checkout that your shipping info is there and is only exclusive for logged in users.
 <hr>
 - Be able to checkout page for either logged in or non logged in users and being able to update or delete items in checkout
 <img src="static/media/checkout.PNG">
