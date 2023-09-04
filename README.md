@@ -137,6 +137,9 @@
 Before implementing the Ajax checkout process I tested my code using shell where I could render that the session was working and returning the session id so it would display in the terminal what was currently in the checkout whiched worked well.
 <hr>
 <img src="static/media/test_checkout.PNG">
+Javascript JSHint to test Javascript code.
+<hr>
+<img src="static/media/manual-javascript.PNG">
 
 ## Additional Testing:
 - Lighthouse Report
@@ -152,6 +155,10 @@ Before implementing the Ajax checkout process I tested my code using shell where
 
 BUGS:
 ========
+- There were not too many bugs that I encountered but most bugs were typo errors.
+- Bug where the checkout was constantly failing payment (fixed)
+- Bug where templates were not loading and django not recognising them (fixed)
+- Known bug - When you change the scaling view on a forms page where it is too small it would not be as responsive (kinda fixed)
 
 
 
@@ -255,6 +262,9 @@ The application is developed using Django and extensively uses built-in function
 - <https://d16hw7tbcsk68f.cloudfront.net/s3/cgccards-production/research/subcategories/pok_pop-series.png> Espeon Gold Star Graded
 - <https://d16hw7tbcsk68f.cloudfront.net/s3/cgccards-production/research/subcategories/pok_e-series-v2.png> Celebi Graded
 - <https://www.pngitem.com/middle/owRRwJ_pokemon-cards-png-pokemon-alakazam-ex-transparent-png/> Alakazam ungraded
+- https://jshint.com/ - Javascript testing
+- https://jigsaw.w3.org/css-validator/ - CSS Validator 
+- https://validator.w3.org/ - html validator
 
 # Deployment:
 
