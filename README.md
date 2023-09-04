@@ -38,7 +38,10 @@
 - Used a boostrap theme called Journal which gives off a nice red tone.
 - The colours that were used during this project were based off Pokemon colours from different ones such as pikachu, charizard, squirtle etc..
 
-# User Stories:
+## Agile User Stories:
+- Here is a link to my user stories: 
+- I followed this guidline and mapped three cards using Kanban board to determine what was next such as todo, progress and done for completion of my user stories and made sure to follow through and complete each task as I went along during this project. 
+- https://github.com/users/aokealy/projects/6/views/1
 
 # Features:
 - Be able to register for a profile
@@ -72,6 +75,9 @@
 - Be able to fill in shipping information unless pre-filled for logged in users and be able to pay through paypal
 <hr>
 <img src="static/media/complete-checkout.PNG">
+
+## Feed Back system 
+- I used Django messages to return a feedback system where users can 
 
 ## Future Features:
 - Create emails registration where user can verify accounts
@@ -107,7 +113,9 @@
 - User message will appear after user logs out (working)
 - User will no longer see features for logged in users after logging out (working)
 
-- Test Filter Products (working)
+## Test Filter Products (working)
+- User to be able to select different Categories (working)
+- User to filter the products into categories (working)
 - Test clicking on Product (working)
 - Test Add Product to checkout (working)
 - Test Update Product in checkout (working)
@@ -132,6 +140,10 @@ Before implementing the Ajax checkout process I tested my code using shell where
 
 - CSS Validator 
 <img src="static/media/css_validator.PNG">
+
+- Responsiveness Test:
+- Tested the responsive test which bootstrap helps with their templates to fit pages on any page and any screen where I manually tested using google chrome developement tools to test the responsiveness of my project.
+
 
 
 BUGS:
@@ -228,6 +240,7 @@ The application is developed using Django and extensively uses built-in function
 - https://developer.paypal.com/integration-builder/ - integrate PayPal
 - https://developer.paypal.com/docs/regional/th/checkout/integration-features/customize-button/ - PayPal buttons
 - https://developer.paypal.com/docs/checkout/standard/customize/validate-user-input/ - PayPal validate User Input
+- https://www.youtube.com/watch?v=3YKXhdOGR-s&t=1285s&ab_channel=SharmaCoder - for ajax inspiration 
 
 # Deployment:
 
