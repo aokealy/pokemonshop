@@ -6,7 +6,7 @@ from django.http import JsonResponse
 
 # Create your views here.
 def final_checkout(request):
-    # User with account - pre fill the form
+    """User with account - pre fill the form"""
 
     if request.user.is_authenticated:
         try:
@@ -94,7 +94,7 @@ def complete_purchase(request):
 
 
 def payment_successful(request):
-    # clear the cart when order complete
+    """clear the cart when order complete"""
 
     for key in list(request.session.keys()):
         if key == "session-key":
@@ -104,4 +104,5 @@ def payment_successful(request):
 
 
 def payment_failure(request):
+    """Payment Failure page if payment is unsucessful"""
     return render(request, "payment/payment-failure.html")

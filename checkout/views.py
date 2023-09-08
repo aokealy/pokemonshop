@@ -17,6 +17,7 @@ def checkout_summary(request):
 
 
 def checkout_add(request):
+    """This is where we add product to checkout"""
     checkout = Checkout(request)
     if request.POST.get("action") == "post":
         product_id = int(request.POST.get("product_id"))
