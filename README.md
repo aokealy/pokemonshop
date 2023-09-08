@@ -341,7 +341,7 @@ Here is an outline of the steps taken to bring this app to the web:
 8. You can now `migrate` and `createsuperuser` for the ElephantSQL database.
    Now is a good time to check that your tables have been added on the ElephantSQL browser:
 
-   ![ElephantSQL table browser](docs/images/elephantsql-browser.png)
+   ![ElephantSQL table browser](static/media/elephant-sql.PNG)
 
 9. Create the `Procfile` for Heroku like so:
 
