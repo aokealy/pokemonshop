@@ -285,7 +285,6 @@ This application uses the following platforms for deployment:
 - [Heroku](https://dashboard.heroku.com/) - primary hosting platform.
 - [ElephantSQL](https://www.elephantsql.com/) - managed Postgres database service.
 - [Amazon S3](https://aws.amazon.com/s3/) - static and media files hosting.
-- [Stripe](https://stripe.com/gb) - payments integration platform.
 
 To follow along to this deployment guide, you will need accounts on the above
 platforms, some of which may require a payment card. It is recommended to use
