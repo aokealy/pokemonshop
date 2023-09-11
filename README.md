@@ -170,12 +170,12 @@
 ## Manual Testing:
 - For Manual Testing I tested everything referencing the User Stories I created in the Project section of my Github Repository to follow through and test manually each function.
 ## Test Registration System: 
-- Test that user can register an account (working)
-- User to fill out required fields to register (working)
-- User to be redirected to Register success page (working)
-- User to login after Register Login Page (working)
-- User to be able to access features when creating account (working)
-- User can still shop even not registered (working)
+- Test that user can register an account - Expected Result - When form is submitted the user will be redirected (working) 
+- User to fill out required fields to register - Expected Result - User will not be able to submit form without required fields filled (working)
+- User to be redirected to Register success page - Expected Result - User after submitting form to be redirected to success page to indicate the user has succeeded in registering (working)
+- User to login after Register Login Page - Expected Result - after user registering the user can then proceed to login (working)
+- User to be able to access features when creating account - Expected Result - User after logging in will see features that are only accesseable to logged in users (working)
+- User can stil shop even not registered - Expected Result - non logged in users can still view products and add to checkout (working)
 
 ## Test Login (working)
 - User to be able to login (working)
