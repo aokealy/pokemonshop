@@ -33,6 +33,10 @@
 <img src="static/media/profile-management-wireframe.PNG">
 - ERD Diagram
 <hr>
+- An entity relationship diagram (ERD), also known as an entity relationship model, is a graphical representation that depicts relationships among people, objects, places, concepts or events within an information technology (IT) system.
+<hr>
+- As you can see how all my models interact with each other. 
+<hr>
 <img src="static/media/erd-diagram.png">
 
 ## Typhography:
