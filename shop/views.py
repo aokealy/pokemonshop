@@ -7,6 +7,7 @@ from django.shortcuts import get_object_or_404
 
 
 def shop(request):
+    """Display all Products on Page"""
     all_products = Product.objects.all()
 
     context = {"shop_products": all_products}
@@ -15,6 +16,7 @@ def shop(request):
 
 
 def categories(request):
+    """Display all Categories on Page"""
     all_categories = Category.objects.all()
 
     return {"all_categories": all_categories}

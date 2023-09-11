@@ -35,6 +35,7 @@ def checkout_add(request):
 
 
 def checkout_delete(request):
+    """Delete product and checkout checkout total"""
     checkout = Checkout(request)
 
     if request.POST.get("action") == "post":
@@ -54,6 +55,7 @@ def checkout_delete(request):
 
 
 def checkout_update(request):
+    """Update Quantity during checkout"""
     checkout = Checkout(request)
 
     if request.POST.get("action") == "post":

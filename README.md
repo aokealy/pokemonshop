@@ -1,4 +1,4 @@
-# Project 5
+# Project 5 | Pokemon Shop
 - Welcome to my Project 5 Eccomerce store where I created a Pokemon Shop since I am a passionate fan of Pokemon and wanted to try and create my very own store where other pokemon fans can access and enjoy looking at only pokemon items that they can purchase and look at the great design. In this project I demostrate a payment system Paypal and use CRUD functionallity for users to be able to update and delete items and also create profile, update profile and delete profile! :)
 - Here are the links to the deployed version of my website and my Github Repository!
 - https://pokemon-shop-ecommerce-ee0b37d9ff00.herokuapp.com/ - Heroku App

@@ -20,6 +20,7 @@ from django.contrib import messages
 
 
 def register(request):
+    """Custom register form using POST request"""
     form = CreateUserForm()
 
     if request.method == "POST":
@@ -43,6 +44,7 @@ def register_success(request):
 
 
 def my_login(request):
+    """Custom Login form using POST request"""
     form = LoginForm()
 
     if request.method == "POST":
@@ -121,9 +123,8 @@ def delete_profile(request):
 # shipping view
 @login_required(login_url="my-login")
 def manage_shipping(request):
+    """account user with shipping information"""
     try:
-        # account user with shipping information
-
         shipping = ShippingAddress.objects.get(user=request.user.id)
 
     except ShippingAddress.DoesNotExist:
@@ -153,6 +154,7 @@ def manage_shipping(request):
 
 @login_required(login_url="my-login")
 def track_purchases(request):
+    """track purchases based on user"""
     try:
         purchases = PurchaseItem.objects.filter(user=request.user)
 
