@@ -47,6 +47,69 @@
 - https://github.com/users/aokealy/projects/6/views/1
 <img src="static/media/user-stories.PNG">
 
+## User Stories Documentation:
+### User Stories - Registration
+
+- User to be able to register account
+- User to fill out required fields to register
+- User to be redirected to Register success page
+- User to login after Register Login Page
+- User to be able to access features when creating account
+- User can still shop even not registered
+
+### User Stories - Login
+- User to be able to login
+- User to login after registration
+- User to be able to login with username and password
+- User to be able to go to register page from login page
+- User will get message saying user has logged in successfully
+- User to be able to have access to features only for login users
+
+### User Stories - Filter Products
+- User to be able to select different Categories
+- User to filter the products into categories
+
+### User Stories - Profile
+- User who is logged in has access to Pokemon Hub Page
+- User can view Profile Management Page
+- User can update username and email
+- User can view Order history of purchases they have made
+- User can update shipping information
+- User can have pre-filled shipping information when checkout
+- User can delete profile
+- User can logout of Profile
+
+### User Stories - Payment
+- User to be able to make payment after checkout
+- User has to have filled in shipping form before user can make payment
+- User has to fill out all required fields to click payment buttons
+- User after payment will be redirected to either success page or failed page
+- User checkout will clear after payment is made
+- User will be able to Track Purchase history after a payment is made
+
+### User Stories - Checkout
+- User to be able to add items to checkout
+- User to be able to update items in checkout
+- User to be able to update quantity in checkout
+- User to be able to delete items in checkout
+- User to continue shopping with items in checkout bag
+- User to be able to logout and still have item in checkout
+
+### User Stories - Products
+- User to be able to see price and image of product on shop page
+- User to be able to click on product title
+- User to view Product information page
+- User to be able to see image of Product information page
+- User to be able to see description and price of product
+- User to be able to able to update quantity of product
+- User to add product to checkout with button
+- User can scale page to mobile view and still see everything clearly
+
+### User Stories - Logout
+- User to be able to logout from any page since it will have logout button
+- Logged in Users will only see logout button
+- User message will appear after user logs out
+- User will no longer see features for logged in users after logging out
 
 # Features:
 - Be able to register for a profile without accessing the admin page.
