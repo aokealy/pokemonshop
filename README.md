@@ -303,8 +303,7 @@ Bootstrap
 ==========
 
 This is a front-end framework which is built using HTML and CSS. It makes it easy to create responsive websites using a grid system with screen-width breakpoints.
-The homepage 'Most Popular' and 'New Products' functionality is partially provided by the Bootstrap Carousel feature.
-Badges are used to provide the item count above the basket; they are also used to detail the status of each individual item status on the Order History page.
+I got to use a bootstrap feature called bootswatch which give you the layout starting out where I worked around it to make it my own and the style I used was Journal.
 
 JQuery
 ==========
