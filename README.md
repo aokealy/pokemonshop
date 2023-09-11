@@ -165,6 +165,8 @@
 - I used Django Unnitest for automated testing where we test using testcase and we create a coverage report that show all test within an app.
 - The first app I tested Payments Forms, views, models and urls.
 <img src="static/media/coverage-payment.PNG">
+- Second app I tested was Profiles
+<img src="static/media/coverage-profiles.PNG">
 
 
 ## Manual Testing:
