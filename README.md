@@ -223,14 +223,26 @@ Javascript JSHint to test Javascript code.
 - CSS Validator 
 <img src="static/media/css_validator.PNG">
 
+- HTML Validator 
+<img src="static/media/html-validator.PNG">
+
 - Responsiveness Test:
 - Tested the responsive test which bootstrap helps with their templates to fit pages on any page and any screen where I manually tested using google chrome developement tools to test the responsiveness of my project.
+- Desktop View:
+<hr>
+<img src="static/media/desktop-responsive.PNG">
+- Tablet View:
+<hr>
+<img src="static/media/tablet-responsive.PNG">
+- Mobile View:
+<hr>
+<img src="static/media/mobile-responsive.PNG">
 
 
 
 BUGS:
 ========
-- There were not too many bugs that I encountered but most bugs were typo errors.
+- There were not too many bugs that I encountered but most bugs were typo errors or where url's were not loading in until I restart the server.
 - Bug where the checkout was constantly failing payment (fixed)
 - Bug where templates were not loading and django not recognising them (fixed)
 - Known bug - When you change the scaling view on a forms page where it is too small it would not be as responsive (kinda fixed)
