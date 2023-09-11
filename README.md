@@ -31,11 +31,9 @@
 - Profile Management where it is easy to update and Profile and also delete profile with big buttons and in center for user to easily read and understand.
 <hr>
 <img src="static/media/profile-management-wireframe.PNG">
-- ERD Diagram that I have attempted which was challenging for me as I struggle to create diagrams. 
-- I tried linking my category models with with products model where I add a Foreign Key which creates a one to many relationship as we will have many different products in different categories.
-- Those products are linked to Payment/ checkout
+- ERD Diagram
 <hr>
-<img src="static/media/erd_diagram.PNG">
+<img src="static/media/erd-diagram.png">
 
 ## Typhography:
 
