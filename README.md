@@ -45,6 +45,8 @@
 - Here is a link to my user stories: 
 - I followed this guidline and mapped three cards using Kanban board to determine what was next such as todo, progress and done for completion of my user stories and made sure to follow through and complete each task as I went along during this project. 
 - https://github.com/users/aokealy/projects/6/views/1
+<img src="static/media/user-stories.PNG">
+
 
 # Features:
 - Be able to register for a profile without accessing the admin page.
