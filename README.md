@@ -4,6 +4,9 @@ The main purpose of this project is to create a Ecommerce platform and to show m
 - Here are the links to the deployed version of my website and my Github Repository!
 - https://pokemon-shop-ecommerce-ee0b37d9ff00.herokuapp.com/ - Heroku App
 - https://github.com/aokealy/pokemonshop - Github Repository
+
+# Custom User Models
+- For my custom user models I have not used any from the Botique Ado project but the ones I have used are similar but markedly differently as I have no relation to the Botique Ado for reference so I feel my Models are different even though that all ecommerce websites use similar models. 
 # UX Design
 ## Mockup:
 <img src="static/media/all-devices-black.png">
