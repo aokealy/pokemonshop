@@ -271,6 +271,7 @@ BUGS:
 - Bug where the checkout was constantly failing payment (fixed)
 - Bug where templates were not loading and django not recognising them (fixed)
 - Known bug - When you change the scaling view on a forms page where it is too small it would not be as responsive (kinda fixed)
+- I was having a few issues with unittest for my automated testing so I tried my best when implementing the test but also did manual testing to make up for the issues with unittest. 
 
 
 
