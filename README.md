@@ -228,6 +228,12 @@
 
 ## Manual JavaScript Testing:
 Before implementing the Ajax checkout process I tested my code using shell where I could render that the session was working and returning the session id so it would display in the terminal what was currently in the checkout whiched worked well.
+- I tested the ajax implementation where user can add to checkout button where the total amount updates (working)
+- Tested Paypal buttons to be disabled when user has no fields filled in when checking out (working)
+- Tested timer javascript app to test that django messages disapears after a few seconds after the action has been completed (working)
+- Tested the delete ajax function button where the user can delete the item from the checkout summary (working)
+- Tested the update ajax function button where the user can update the quantity of the product from the checkout summary where the total amount and quantity will update according to the total amount in checkout summary (working)
+- Tested when paying for items that the total amount links with the total in paypal when being redirected to the paypal websiteand getting that total_price(working)
 <hr>
 <img src="static/media/test_checkout.PNG">
 Javascript JSHint to test Javascript code.
