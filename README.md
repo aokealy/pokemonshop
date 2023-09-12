@@ -44,6 +44,10 @@
 ## Colour Scheme
 - Used a boostrap theme called Journal which gives off a nice red tone.
 - The colours that were used during this project were based off Pokemon colours from different ones such as pikachu, charizard, squirtle etc..
+- ![#F6CF57](https://placehold.co/15x15/F6CF57/F6CF57.png) `#F6CF57` - Pikachu
+- ![#A2D7D5](https://placehold.co/15x15/A2D7D5/A2D7D5.png) `#A2D7D5` - Squirtle
+- ![#83ba36](https://placehold.co/15x15/83ba36/83ba36.png) `#83ba36` - Bulbasaur
+- ![#86b66e](https://placehold.co/15x15/86b66e/86b66e.png) `#86b66e` - Caterpie
 
 ## Agile User Stories:
 - Here is a link to my user stories: 
@@ -168,9 +172,19 @@
 ## Automated Testing: 
 - I used Django Unnitest for automated testing where we test using testcase and we create a coverage report that show all test within an app.
 - The first app I tested Payments Forms, views, models and urls.
-<img src="static/media/coverage-payment.PNG">
+<img src="static/media/payment-test-report.PNG">
+
 - Second app I tested was Profiles
-<img src="static/media/coverage-profiles.PNG">
+<hr>
+<img src="static/media/profiles-test-report.PNG">
+
+- Third app I tested was Checkout
+<hr>
+<img src="static/media/checkout-test-report.PNG">
+
+- Fourth app I tested was Shop
+<hr>
+<img src="static/media/shop-test-report.PNG">
 
 
 ## Manual Testing:
