@@ -9,62 +9,87 @@
 
 <url>
   <loc>https://pokemon-shop-ecommerce-ee0b37d9ff00.herokuapp.com/</loc>
-  <lastmod>2023-09-01T10:44:15+00:00</lastmod>
+  <lastmod>2023-09-12T10:17:04+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://pokemon-shop-ecommerce-ee0b37d9ff00.herokuapp.com/search/graded-cards/</loc>
-  <lastmod>2023-09-01T10:44:15+00:00</lastmod>
+  <lastmod>2023-09-12T10:17:04+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://pokemon-shop-ecommerce-ee0b37d9ff00.herokuapp.com/search/ungraded-cards/</loc>
-  <lastmod>2023-09-01T10:44:15+00:00</lastmod>
+  <lastmod>2023-09-12T10:17:04+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://pokemon-shop-ecommerce-ee0b37d9ff00.herokuapp.com/profiles/register</loc>
-  <lastmod>2023-09-01T10:44:15+00:00</lastmod>
+  <lastmod>2023-09-12T10:17:04+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://pokemon-shop-ecommerce-ee0b37d9ff00.herokuapp.com/profiles/my-login</loc>
-  <lastmod>2023-09-01T10:44:15+00:00</lastmod>
+  <lastmod>2023-09-12T10:17:04+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://pokemon-shop-ecommerce-ee0b37d9ff00.herokuapp.com/checkout/</loc>
-  <lastmod>2023-09-01T10:44:15+00:00</lastmod>
+  <lastmod>2023-09-12T10:17:04+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://pokemon-shop-ecommerce-ee0b37d9ff00.herokuapp.com/product/charizard-graded/</loc>
-  <lastmod>2023-09-01T10:44:15+00:00</lastmod>
+  <lastmod>2023-09-12T10:17:04+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://pokemon-shop-ecommerce-ee0b37d9ff00.herokuapp.com/product/espeon-gold-star-graded/</loc>
-  <lastmod>2023-09-01T10:44:15+00:00</lastmod>
+  <lastmod>2023-09-12T10:17:04+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://pokemon-shop-ecommerce-ee0b37d9ff00.herokuapp.com/product/celebi-graded/</loc>
-  <lastmod>2023-09-01T10:44:15+00:00</lastmod>
+  <lastmod>2023-09-12T10:17:04+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://pokemon-shop-ecommerce-ee0b37d9ff00.herokuapp.com/product/trophy-pikachu-graded/</loc>
-  <lastmod>2023-09-01T10:44:15+00:00</lastmod>
+  <lastmod>2023-09-12T10:17:04+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://pokemon-shop-ecommerce-ee0b37d9ff00.herokuapp.com/product/lugia-graded/</loc>
-  <lastmod>2023-09-01T10:44:15+00:00</lastmod>
+  <lastmod>2023-09-12T10:17:04+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://pokemon-shop-ecommerce-ee0b37d9ff00.herokuapp.com/product/deoxys-ex/</loc>
+  <lastmod>2023-09-12T10:17:04+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://pokemon-shop-ecommerce-ee0b37d9ff00.herokuapp.com/product/lucario-ex/</loc>
+  <lastmod>2023-09-12T10:17:04+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://pokemon-shop-ecommerce-ee0b37d9ff00.herokuapp.com/product/heatron/</loc>
+  <lastmod>2023-09-12T10:17:04+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://pokemon-shop-ecommerce-ee0b37d9ff00.herokuapp.com/product/alakazam-ex/</loc>
+  <lastmod>2023-09-12T10:17:04+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://pokemon-shop-ecommerce-ee0b37d9ff00.herokuapp.com/product/moltres-zapdos-articuno-gx/</loc>
+  <lastmod>2023-09-12T10:17:04+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://pokemon-shop-ecommerce-ee0b37d9ff00.herokuapp.com/payment/final-checkout</loc>
-  <lastmod>2023-09-01T10:44:15+00:00</lastmod>
+  <lastmod>2023-09-12T10:17:04+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 
